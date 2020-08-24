@@ -109,7 +109,10 @@ end
 # Fetch the dependency files #
 ##############################
 
-metrics_publisher = MetricsPublisher.new(endpoint: elastic_endpoint)
+metrics_publisher = MetricsPublisher.new(
+  endpoint: elastic_endpoint, 
+  repository: repo_name
+)
 
 puts "Fetching #{package_manager} dependency files for #{repo_name}"
 fetcher = Dependabot::FileFetchers.for_package_manager(package_manager).new(
