@@ -1,1 +1,4 @@
-^Agoda
+Agoda.Adp.Messaging
+Agoda.Config.Consul
+Agoda.Kafka.Queue
+Agoda.ApplicationInsights.AspNetCore
